@@ -19,11 +19,6 @@ namespace Dfd
         public mainForm()
         {
             InitializeComponent();
-            Task.Run(() => GetSlots());   
-            Task.Run(() => DoLeftClick());
-            Task.Run(() => DoRightClick());
-            Task.Run(() => Randomisation());
-            sldLeftCPS.Region = Region.FromHrgn(WinApi.CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
         }
         string[] engelle = {
 "Fiddler Everywhere",
